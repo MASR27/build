@@ -1,0 +1,13 @@
+theme: jekyll-adminlte
+plugins:
+  - jekyll-paginate
+  - jekyll-adminlte
+  - jekyll-sitemap
+  - jekyll-feed
+  - jekyll-seo-tag
+
+paginate: 10
+title: Your Site Title
+description: Your Site Description
+url: https://your-site-url.com/
+baseurl: /
