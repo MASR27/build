@@ -1,13 +1,35 @@
-theme: jekyll-adminlte
-plugins:
-  - jekyll-paginate
-  - jekyll-adminlte
-  - jekyll-sitemap
-  - jekyll-feed
-  - jekyll-seo-tag
+site_name: Gas Station Measurement Management System
+site_description: A web application for managing measurements at gas stations
+site_author: John Doe
+site_url: https://example.com
 
-paginate: 10
-title: Your Site Title
-description: Your Site Description
-url: https://your-site-url.com/
-baseurl: /
+theme:
+  name: material
+  palette:
+    primary: 'green'
+  font:
+    text: 'Roboto'
+
+plugins:
+  - search
+  - redirects:
+      - old: '/old-page.html'
+        new: '/new-page.html'
+      - old: '/another-old-page.html'
+        new: '/another-new-page.html'
+
+nav:
+  - Home: 'index.md'
+  - Measurements:
+      - 'Measurement 1': 'measurement-1.md'
+      - 'Measurement 2': 'measurement-2.md'
+  - Reports:
+      - 'Report 1': 'report-1.md'
+      - 'Report 2': 'report-2.md'
+
+markdown_extensions:
+  - toc:
+      permalink: true
+      toc_depth: 3
+
+output_dir: 'docs'
