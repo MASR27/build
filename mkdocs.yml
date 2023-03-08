@@ -1,0 +1,8 @@
+site_name: My Site
+theme:
+  name: material
+  palette:
+    primary: "green"
+plugins:
+  - search
+  - mkdocs-redirects
